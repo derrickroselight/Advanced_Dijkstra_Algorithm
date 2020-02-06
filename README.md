@@ -24,7 +24,7 @@ Then The follow is how this algorithm works(pseudo code) :
 2. Lock array is used to check whether we find the shortest path between "start point" to "[i] node".  
 3. The Dijkstra loop will update the Record & distance arrays accroading to lock array.  
 4. In short, if (a -> b) + (b -> c) < (a -> c), the route will be updated as (a -> b) + (b -> c).  
-5. Step 4. will be executed n times to guarantee the a -> [i] node goes by shortest route, n is the # of vertice.  
+5. Step 4. will be executed n times to guarantee that a -> [i] node goes by shortest route, n is the # of vertice.  
 6. Consequently, the average Big-O is inevitable O(n^2).  
 
 Output would be like that:  
