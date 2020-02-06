@@ -9,7 +9,7 @@ Blue numbers : Width of the road.
 Black numbers : Distance of the road.   
 Arrows : All of those roads are one-way.  
 
-![image](https://github.com/derrickroselight/Advanced_Dijkstra_Algorithm/blob/master/Dijkstra_map.jpg)
+![image]()
 
 Then choose start point, end point, and your transportations.  
 1 Walk (Width requirement : 0.5)   
