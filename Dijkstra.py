@@ -65,25 +65,25 @@ for i in range(0, n):
 for i in range(0, n):
     print(dis[i])        
 
-# initial "sure" array
-sure = np.zeros(int(df.iloc[0][0]), dtype=int)
-sure[start] = 1
+# initial "lock" array
+lock = np.zeros(int(df.iloc[0][0]), dtype=int)
+lock[start] = 1
 
 # Dijkstra Algorithm
 for i in range(0, n-1):
     # Find the nearest node to start node
-    min = inf
+    minimum = inf
     for j in range(0, n):
-        if (sure[j] == 0) and (dis[j] < min) and (w[start][j] >= width[method]):
-            min = dis[j]
+        if (lock[j] == 0) and (dis[j] < minimum) and (w[start][j] >= width[method]):
+            minimum = dis[j]
             u = j
-    sure[u] = 1
+    lock[u] = 1
         
     for v in range(0, n):
         if d[u][v] < inf:
             if (dis[v] > dis[u] + d[u][v]) and (w[u][v] >= width[method]):
                 dis[v] = dis[u] + d[u][v]
-                if sure[u] == 1 :
+                if lock[u] == 1 :
                       record[v].clear()
                 for k in range(len(record[u])):      
                       record[v].append(record[u][k])
@@ -104,3 +104,9 @@ elif record[end] == []: print('start = end')
 else:
     for i in range(len(record[end])):
         print("%d -> %d Distance : %d Width : %d Limits : %s" %(int(df.iloc[record[end][i]][0]),int(df.iloc[record[end][i]][1]),int(df.iloc[record[end][i]][2]),int(df.iloc[record[end][i]][3]),df.iloc[record[end][i]][4]) )
+
+
+
+
+
+
