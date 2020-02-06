@@ -1,6 +1,6 @@
 # Advanced_Dijkstra_Algorithm
 Dijkstra Algorithm --- Finding the most optimal road on the map.  
-I'd like to call it "advanced" because I also added transportation and width limits, which made it more vivid.  
+I'd like to call it "advanced" because I added transportation and width limits, which made it more vivid.  
 Moreover, I also set up a array to record which roads the optimal route passed by. 
 
 To begin with, we have to covert the .txt into Numpy matrix, so the map will look like that.  
@@ -23,6 +23,7 @@ Then The follow is how this algorithm works(pseudo code) :
 1. Record & distance arrays record the initial status.  
 2. Lock array is used to check whether we find the shortest path between "start point" to "[i] node".
 3. The Dijkstra loop will update the Record & distance arrays accroading to lock array. 
+4. 
 
 
 Output would be like that:  
@@ -35,9 +36,6 @@ Route & Width:
 2 -> 5 Distance : 20 Width : 4 Limits : 01111  
 5 -> 4 Distance : 10 Width : 3 Limits : 00111  
 4 -> 1 Distance : 75 Width : 8 Limits : 11111  
-
-
-
 
 
 
