@@ -41,9 +41,9 @@ Route & Width:
 
 
 ***Postscript***   
-This is one of my algorithm homework when I was in college.  
+This was one of my algorithm homework when I was in college.  
 I still remembered that I gained a plenty of accomplishment from it.  
 Because when I was young, I was entirely fascinated with Google Map and thought it was a black magic.  
-Hence, After finishing this, I feel like i'm a senior software engineer in Google Map team. 
+Hence, After finishing this, I feel like I'm a senior software engineer in Google Map team.  
 B-)  
 (In fact, They're not using Dijkstra Algorithm, because it isn't fast enough and too simple to work on that scale.)
