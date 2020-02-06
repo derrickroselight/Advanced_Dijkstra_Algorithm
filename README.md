@@ -9,7 +9,7 @@ Blue numbers : Width of the road.
 Black numbers : Distance of the road.   
 Arrows : All of those roads are one-way.  
 
-![image]()
+![image](https://github.com/derrickroselight/Advanced_Dijkstra_Algorithm/blob/master/Dijkstra_map2.jpg)
 
 Then choose start point, end point, and your transportations.  
 1 Walk (Width requirement : 0.5)   
@@ -21,22 +21,23 @@ Ex. Car cannot take Road #3(0 -> 3), because the width of Road #3 is only 3, but
   
 Then The follow is how this algorithm works(pseudo code) :  
 1. Record & distance arrays record the initial status.  
-2. Lock array is used to check whether we find the shortest path between "start point" to "[i] node".
-3. The Dijkstra loop will update the Record & distance arrays accroading to lock array. 
-4. 
-
+2. Lock array is used to check whether we find the shortest path between "start point" to "[i] node".  
+3. The Dijkstra loop will update the Record & distance arrays accroading to lock array.  
+4. In short, if (a -> b) + (b -> c) < (a -> c), the route will be updated as (a -> b) + (b -> c).  
+5. Step 4. will be executed n times to guarantee the a -> [i] node goes by shortest route, n is the # of vertice.  
+6. Consequently, the average Big-O is inevitable O(n^2).  
 
 Output would be like that:  
 Start Point : 2  
-Destination : 1  
+Destination : 0  
 Transportation : Walk  
 Width Needed : 0.5  
-Total Distance : 105  
+Total Distance : 90  
 Route & Width:  
-2 -> 5 Distance : 20 Width : 4 Limits : 01111  
-5 -> 4 Distance : 10 Width : 3 Limits : 00111  
-4 -> 1 Distance : 75 Width : 8 Limits : 11111  
-
+2 -> 5 Distance : 20 Width : 4 Limits : 11110  
+5 -> 4 Distance : 10 Width : 3 Limits : 11100  
+4 -> 3 Distance : 10 Width : 5 Limits : 11110  
+3 -> 0 Distance : 50 Width : 4 Limits : 11110  
 
 
 ***Postscript***   
