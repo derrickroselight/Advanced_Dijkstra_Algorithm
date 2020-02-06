@@ -19,10 +19,22 @@ Then choose start point, end point, and your transportations.
 5 Bus (Width requirement : 6)  
 Ex. Car cannot take Road #3(0 -> 3), because the width of Road #3 is only 3, but car needs 4.
   
-Then The follow is how this algorithm works(pseudo code) :
-Take 
+Then The follow is how this algorithm works(pseudo code) :  
+1. Record & distance arrays record the initial status.  
+2. Lock array is used to check whether we find the shortest path between "start point" to "[i] node".
+3. The Dijkstra loop will update the Record & distance arrays accroading to lock array. 
 
 
+Output would be like that:  
+Start Point : 2  
+Destination : 1  
+Transportation : Walk  
+Width Needed : 0.5  
+Total Distance : 105  
+Route & Width:  
+2 -> 5 Distance : 20 Width : 4 Limits : 01111  
+5 -> 4 Distance : 10 Width : 3 Limits : 00111  
+4 -> 1 Distance : 75 Width : 8 Limits : 11111  
 
 
 
