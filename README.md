@@ -41,6 +41,10 @@ Route & Width:
 
 
 ***Postscript***   
-When I was young, I was fascinated with Google Map thought it was a black magic..  
+This is one of my algorithm homework when I was in college.  
 I still remembered that I gained a plenty of accomplishment from it.  
-I feel like i'm a senior software engineer in google map team.
+Because when I was young, I was entirely fascinated with Google Map and thought it was a black magic.  
+Hence, After finishing this, I feel like i'm a senior software engineer in Google Map team. 
+B-)  
+(In fact, They're not using Dijkstra Algorithm cause it isn't fast enough.)  
+ 
