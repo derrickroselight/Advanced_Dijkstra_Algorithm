@@ -1,6 +1,6 @@
 # Advanced_Dijkstra_Algorithm
 Dijkstra Algorithm --- Finding the most optimal path on the map.  
-I'd like to call it "advanced" because I also added transportation and width limits, which make it more vivid.
+I'd like to call it "advanced" because I also added transportation and width limits, which made it more vivid.
 
 To begin with, we have to covert the .txt into Numpy matrix, so the map will look like that.  
 Gold numbers : # of the road.  
@@ -10,7 +10,13 @@ Arrows : All of those roads are one-way.
 
 ![image](https://github.com/derrickroselight/Advanced_Dijkstra_Algorithm/blob/master/Dijkstra_map.jpg)
 
-
+Then choose start point, end point, and your transportations.  
+1 Walk (Width requirement : 0.5)   
+2 Bike (Width requirement : 1.5)      
+3 Scooter (Width requirement : 2)      
+4 Car (Width requirement : 4)     
+5 Bus (Width requirement : 6)     
+Ex. Car cannot take Road#3(0 -> 3), because the with of #3 is only 3.
 
 
 
