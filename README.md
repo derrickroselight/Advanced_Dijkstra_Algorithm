@@ -1,7 +1,7 @@
 # Advanced_Dijkstra_Algorithm
 Dijkstra Algorithm --- Finding the most optimal road on the map.  
 I'd like to call it "advanced" because I also added transportation and width limits, which made it more vivid.  
-Moreover, I even set up a array to record which roads the optimal method choose. 
+Moreover, I even set up a array to record which roads the optimal route passed by. 
 
 To begin with, we have to covert the .txt into Numpy matrix, so the map will look like that.  
 Gold numbers : # of the road.  
